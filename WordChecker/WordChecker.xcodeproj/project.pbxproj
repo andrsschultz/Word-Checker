@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450E669A21E3C31500C3A091 /* CheckerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E669921E3C31500C3A091 /* CheckerTextField.swift */; };
 		45A109BA21E3C0AF00BC54AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A109B921E3C0AF00BC54AE /* AppDelegate.swift */; };
-		45A109BC21E3C0AF00BC54AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A109BB21E3C0AF00BC54AE /* ViewController.swift */; };
+		45A109BC21E3C0AF00BC54AE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A109BB21E3C0AF00BC54AE /* HomeVC.swift */; };
 		45A109BF21E3C0AF00BC54AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A109BD21E3C0AF00BC54AE /* Main.storyboard */; };
 		45A109C221E3C0AF00BC54AE /* WordChecker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45A109C021E3C0AF00BC54AE /* WordChecker.xcdatamodeld */; };
 		45A109C421E3C0AF00BC54AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A109C321E3C0AF00BC54AE /* Assets.xcassets */; };
@@ -16,9 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		450E669921E3C31500C3A091 /* CheckerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerTextField.swift; sourceTree = "<group>"; };
 		45A109B621E3C0AF00BC54AE /* WordChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A109B921E3C0AF00BC54AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45A109BB21E3C0AF00BC54AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45A109BB21E3C0AF00BC54AE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		45A109BE21E3C0AF00BC54AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45A109C121E3C0AF00BC54AE /* WordChecker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordChecker.xcdatamodel; sourceTree = "<group>"; };
 		45A109C321E3C0AF00BC54AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +39,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		450E669721E3C2D100C3A091 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				450E669921E3C31500C3A091 /* CheckerTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		450E669821E3C2DA00C3A091 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				45A109BB21E3C0AF00BC54AE /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		45A109AD21E3C0AE00BC54AE = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +74,9 @@
 		45A109B821E3C0AF00BC54AE /* WordChecker */ = {
 			isa = PBXGroup;
 			children = (
+				450E669821E3C2DA00C3A091 /* Controller */,
+				450E669721E3C2D100C3A091 /* Views */,
 				45A109B921E3C0AF00BC54AE /* AppDelegate.swift */,
-				45A109BB21E3C0AF00BC54AE /* ViewController.swift */,
 				45A109BD21E3C0AF00BC54AE /* Main.storyboard */,
 				45A109C321E3C0AF00BC54AE /* Assets.xcassets */,
 				45A109C521E3C0AF00BC54AE /* LaunchScreen.storyboard */,
@@ -139,8 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				45A109C221E3C0AF00BC54AE /* WordChecker.xcdatamodeld in Sources */,
-				45A109BC21E3C0AF00BC54AE /* ViewController.swift in Sources */,
+				45A109BC21E3C0AF00BC54AE /* HomeVC.swift in Sources */,
 				45A109BA21E3C0AF00BC54AE /* AppDelegate.swift in Sources */,
+				450E669A21E3C31500C3A091 /* CheckerTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
