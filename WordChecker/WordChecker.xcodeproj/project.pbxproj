@@ -10,6 +10,7 @@
 		450E669A21E3C31500C3A091 /* CheckerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E669921E3C31500C3A091 /* CheckerTextField.swift */; };
 		450E669C21E3D02B00C3A091 /* OfficialScrabbleWordListGerman.txt in Resources */ = {isa = PBXBuildFile; fileRef = 450E669B21E3D02B00C3A091 /* OfficialScrabbleWordListGerman.txt */; };
 		450E669F21E3D05600C3A091 /* WordChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E669E21E3D05600C3A091 /* WordChecker.swift */; };
+		450E66A121E3E16C00C3A091 /* InfoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E66A021E3E16C00C3A091 /* InfoTVC.swift */; };
 		45A109BA21E3C0AF00BC54AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A109B921E3C0AF00BC54AE /* AppDelegate.swift */; };
 		45A109BC21E3C0AF00BC54AE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A109BB21E3C0AF00BC54AE /* HomeVC.swift */; };
 		45A109BF21E3C0AF00BC54AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A109BD21E3C0AF00BC54AE /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		450E669921E3C31500C3A091 /* CheckerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerTextField.swift; sourceTree = "<group>"; };
 		450E669B21E3D02B00C3A091 /* OfficialScrabbleWordListGerman.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OfficialScrabbleWordListGerman.txt; sourceTree = "<group>"; };
 		450E669E21E3D05600C3A091 /* WordChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordChecker.swift; sourceTree = "<group>"; };
+		450E66A021E3E16C00C3A091 /* InfoTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTVC.swift; sourceTree = "<group>"; };
 		45A109B621E3C0AF00BC54AE /* WordChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A109B921E3C0AF00BC54AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45A109BB21E3C0AF00BC54AE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				45A109BB21E3C0AF00BC54AE /* HomeVC.swift */,
+				450E66A021E3E16C00C3A091 /* InfoTVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				45A109BA21E3C0AF00BC54AE /* AppDelegate.swift in Sources */,
 				450E669A21E3C31500C3A091 /* CheckerTextField.swift in Sources */,
 				450E669F21E3D05600C3A091 /* WordChecker.swift in Sources */,
+				450E66A121E3E16C00C3A091 /* InfoTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

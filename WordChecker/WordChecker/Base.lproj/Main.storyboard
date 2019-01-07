@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
-        <!--Table View Controller-->
+        <!--InfoTVC-->
         <scene sceneID="dFy-Lp-O7d">
             <objects>
-                <tableViewController id="jut-YV-HHh" sceneMemberID="viewController">
+                <tableViewController id="jut-YV-HHh" customClass="InfoTVC" customModule="WordChecker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="iee-dW-L2C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,6 +144,10 @@
                             <outlet property="delegate" destination="jut-YV-HHh" id="KMe-rG-mQf"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="fjK-3x-LFu" kind="show" identifier="goToDatenschutzTVC" id="dfY-2P-H3J"/>
+                        <segue destination="LUy-rT-7iU" kind="show" identifier="goToUeberVC" id="3W1-70-YHD"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbQ-JX-3sV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,6 +171,192 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ljq-M2-zfe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="20i-iM-zS2">
+            <objects>
+                <tableViewController storyboardIdentifier="DatenschutzTVC" id="fjK-3x-LFu" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="M8h-hO-ifg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="wS9-X3-Kij">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="406" id="RYl-YN-yOg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="406"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RYl-YN-yOg" id="JhK-nK-LMJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="405.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Jxo-Id-PNJ">
+                                                    <rect key="frame" x="25" y="11" width="334" height="384"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Im Rahmen der Benutzung der App „Wort Checker für Scrabble“ speichern wir personenbezogene Daten von Ihnen und verarbeiten diese durch einen für den Datenschutz Verantwortlichen. Die Speicherung und Verarbeitung findet nur für die erforderliche Zeit der festgesetzten Zwecke und gesetzlichen Pflichten statt.
+
+Im Folgenden listen wir Ihnen die Art und Umfang der entsprechenden Daten auf, wie diese verarbeitet werden und welche Rechte Ihnen diesbezüglich zustehen.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="406" id="Ij3-z9-f8C">
+                                        <rect key="frame" x="0.0" y="406" width="375" height="406"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ij3-z9-f8C" id="Qwa-fM-8PU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="405.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OZr-mc-B7x">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="384"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">I. Kontaktdaten
+
+Die App wird betrieben durch: Andreas Schultz, Zwergerstraße 13, 85579 Neubiberg. Der Kontakt kann postalisch durch ebengenannte Adresse oder per Email an andrsschultz@gmail.com aufgenommen werden. Die ebengennante Person stellt auch den für den Datenschutz Verantwortlichen dar.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="406" id="T3n-sn-OPD">
+                                        <rect key="frame" x="0.0" y="812" width="375" height="406"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T3n-sn-OPD" id="e44-D4-zf3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="405.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="m1G-ot-5h3">
+                                                    <rect key="frame" x="16" y="0.0" width="351" height="384"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">II. Benötigte Berechtigungen
+
+Die App benötigt derzeit keine Berechtigungen.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="406" id="dd7-Ny-Fjx">
+                                        <rect key="frame" x="0.0" y="1218" width="375" height="406"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dd7-Ny-Fjx" id="LcF-xI-yVa">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="405.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Fzj-hc-1fK">
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="384"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">III. Nutzungsdaten und deren Auswertung
+
+Mithilfe der statistischen Auswertung von Nutzungsdaten, können wir die App sicher betreiben und kundenorientiert weiterentwickeln. Dazu erheben wir im Rahmen von Apples App Analytics Programm Benutzerdaten. Diese werden jedoch erst erhoben, wenn Sie der Bereitstellung von Diagnose- und Nutzungsdateninformationen zugestimmt haben. Dies wird entweder beim Installationsprozess oder unmittelbar danach angefragt. Um dieser Erhebung danach wieder zu widersprechen (gemäß Art. 7 Abs. 3 DSGVO), deaktivieren Sie die Funktion in Ihren Einstellungen. Eine genaue Anleitung finden Sie hier: https://support.apple.com/de-de/HT202100.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="406" id="21i-HK-SnI">
+                                        <rect key="frame" x="0.0" y="1624" width="375" height="406"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="21i-HK-SnI" id="61n-PP-4Ra">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="405.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Bpp-Dn-KJG">
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="364"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">IV. Weitergabe an Dritte
+
+Erfasste und verarbeitet Daten werden nur weitergeben wenn,
+
+Gesetzlich vorgeschrieben oder
+Durch Gerichtsentscheidung festgelegt oder wenn
+Weitergabe im Falle von Angriffen auf die Internetinfrastruktur des DWD zur Rechts- oder Strafverfolgung erforderlich.
+Eine weitergehende Weitergabe an Dritte findet nicht statt.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="406" id="dje-ni-Ix2">
+                                        <rect key="frame" x="0.0" y="2030" width="375" height="406"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dje-ni-Ix2" id="HBV-WZ-PnA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="405.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="NxH-Tt-5Vw">
+                                                    <rect key="frame" x="8" y="0.0" width="359" height="364"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">V. Betroffenenrechte
+
+Sie können der Erhebung und Verarbeitung Ihrer Daten jederzeit widersprechen. Vgl. Sie hierzu bitte Punkt III.
+Sie können jederzeit und unentgeltlich Auskunft über von Ihnen gespeicherte Daten und deren Verarbeitung erhalten.
+Sie können unrichtige Daten von Ihnen korrigieren lassen.
+Sie können Daten von Ihnen löschen oder sperren lassen, soweit gesetzliche Gründe dem nicht entgegenstehen.
+ 
+
+Stand Januar 2019</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="fjK-3x-LFu" id="hAs-3z-dCd"/>
+                            <outlet property="delegate" destination="fjK-3x-LFu" id="ogX-Ee-w8w"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GJT-jh-oKR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2982" y="134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wfX-fH-Lbp">
+            <objects>
+                <viewController storyboardIdentifier="UeberVC" id="LUy-rT-7iU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VbT-bJ-PdP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;?&quot;-Icon: Icon made by Freepik/Flaticon from www.flaticon.com." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="W4I-nt-7dg">
+                                <rect key="frame" x="37" y="73" width="322" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Impressum: Andreas Schultz, Zwergerstraße 13, 85579 Neubiberg. andrsschultz@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="vje-jn-2QL">
+                                <rect key="frame" x="37" y="163" width="323" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HRJ-iT-eAT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yho-hq-Kn4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2981.5999999999999" y="903.59820089955031"/>
         </scene>
     </scenes>
     <resources>

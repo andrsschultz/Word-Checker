@@ -84,8 +84,7 @@ extension String {
             stringToSearch = stringToSearch.replacingCharacters(in: foundRange, with: "")
             count += 1
         }
-        
-        print(stringToFind, count)
+
         return count
     }
 }

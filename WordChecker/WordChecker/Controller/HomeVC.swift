@@ -73,18 +73,21 @@ class HomeVC: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if let text = checkerTextField.text {
-            print(text)
-            changeWordLabelText(withText: text.uppercased())
-            if checkIfWordIsValid(wordToCheck: text.uppercased()) {
-                resultLabel.text = "Zulässig"
-                resultLabel.textColor = #colorLiteral(red: 0, green: 0.2705882353, blue: 0.07058823529, alpha: 1)
-                pointsLabel.text = "Punkte: \(pointsForWord(word: text.uppercased()))"
-            } else {
-                resultLabel.text = "Unzulässig"
-                resultLabel.textColor = #colorLiteral(red: 0.4392545819, green: 0.009904155508, blue: 0.06312271208, alpha: 1)
-                pointsLabel.text = " "
+            print("Eingegebner text: \(text)")
+            
+            if text.isEmpty == false {
+                changeWordLabelText(withText: text.uppercased())
+                if checkIfWordIsValid(wordToCheck: text.uppercased()) {
+                    resultLabel.text = "Zulässig"
+                    resultLabel.textColor = #colorLiteral(red: 0, green: 0.2705882353, blue: 0.07058823529, alpha: 1)
+                    pointsLabel.text = "Punkte: \(pointsForWord(word: text.uppercased()))"
+                } else {
+                    resultLabel.text = "Unzulässig"
+                    resultLabel.textColor = #colorLiteral(red: 0.4392545819, green: 0.009904155508, blue: 0.06312271208, alpha: 1)
+                    pointsLabel.text = " "
+                }
+                enableLabels(enable: true)
             }
-            enableLabels(enable: true)
         }
         
         checkerTextField.resignFirstResponder()
