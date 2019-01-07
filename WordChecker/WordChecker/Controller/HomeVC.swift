@@ -24,9 +24,33 @@ class HomeVC: UIViewController, UITextFieldDelegate {
         checkerTextField.delegate = self
         
         enableLabels(enable: false)
+    
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.barTintColor = .clear
+        self.navigationController?.navigationBar.isTranslucent = true
+        let button = UIButton.init(type: .custom)
+        //set image for button
+        button.setImage(UIImage(named: "round-help-button"), for: UIControl.State.normal)
+        //add function for button
+        button.addTarget(self, action: #selector(goToInfoTVC), for: UIControl.Event.touchUpInside)
+        //set frame
+        button.frame = CGRect(x: 0, y: 5, width: 25, height: 25)
+        
+        button.widthAnchor.constraint(equalToConstant: 25).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 25).isActive = true
+        
+        let barButton = UIBarButtonItem(customView: button)
+        //assign button to navigationbar
+        self.navigationItem.leftBarButtonItem = barButton
     }
     
+    
     //CUSTOM FUNCS
+    
+    @objc func goToInfoTVC() {
+        performSegue(withIdentifier: "goToInfoTVC", sender: nil)
+    }
     
     func changeWordLabelText(withText text: String) {
         wordLabel.text = "Das Wort \(text) ist"
