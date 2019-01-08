@@ -88,6 +88,13 @@ class HomeVC: UIViewController, UITextFieldDelegate {
                 }
                 enableLabels(enable: true)
             }
+            
+            if text == "ISABELLAHEIGL" {
+                pointsLabel.text = " "
+                wordLabel.text = " "
+                resultLabel.text = "I love you"
+                resultLabel.textColor = #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)
+            }
         }
         
         checkerTextField.resignFirstResponder()
